@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./modcss/splide.min.css" />
+    <link href="./modcss/aos.css" rel="stylesheet" />
+    <title>Home</title>
+  </head>
+  <body class="mb-[0px] bg-[#f8f8f8]">
+    <!-- Utilities Start -->
+    <div id="_progress"></div>
+    <div id="top-btn">
+      <img src="./assets/arrow_up.svg" alt="" class="w-[40px] h-[40px]" />
+    </div>
+    <div class="circle" id="_circle"></div>
+    <!-- Utilities End -->
+
+    <!-- Header Start -->
+    <header>
+      <nav
+        class="fixed h-[100vh] w-[100vw] bg-[#000] z-[1000] transition-all opacity-0 bg-opacity-30"
+        id="custom_backdrop"
+      >
+        <div
+          class="h-full fixed left-0 top-0 w-[300px] bg-primary opacity-0 transition-all"
+          id="custom_nav"
+        >
+          <div class="py-[30px] pl-[20px]" id="close-nav">
+            <img src="./assets/close.svg" class="w-[40px] h-auto" alt="" />
+          </div>
+          <ul class="flex flex-col gap-[30px] items-center my-[60px] h-full">
+            <li class="">
+              <a class="text-[32px] font-semibold text-gray opacity-50" href="/"
+                >Home</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="text-[32px] font-semibold text-gray opacity-50"
+                href="/about.html"
+                >About</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="text-[32px] font-semibold text-gray opacity-50"
+                href="/services.html"
+                >Services</a
+              >
+            </li>
+            <li class="">
+              <a class="text-[32px] font-semibold text-gray opacity-50" href="/"
+                >Partners</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="text-[32px] font-semibold text-gray opacity-50"
+                href="/contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="w-full h-[160px] bg-primary"></div>
+      <!-- Nav Start -->
+      <div class="mx-[10px] relative top-[-145px]">
+        <div
+          class="flex justify-between lg:justify-around items-center absolute top-0 w-full z-10 px-[3rem] lg:px-0"
+        >
+          <div
+            class="italic text-secondary font-bold text-[26px] lg:text-[40px] my-[2rem] lg:my-0"
+          >
+            <a href="/">RIUs</a>
+          </div>
+          <div id="open-nav" class="lg:hidden">
+            <img
+              src="./assets/nav.svg"
+              class="w-[30px] lg:w-[50px] h-auto"
+              alt=""
+            />
+          </div>
+          <ul
+            class="hidden lg:flex gap-[30px] items-center justify-center my-[40px]"
+          >
+            <li class="hover:scale-110 transition-all">
+              <a class="text-[22px] font-semibold text-gray opacity-50" href="/"
+                >Home</a
+              >
+            </li>
+            <li class="hover:scale-110 transition-all">
+              <a
+                class="text-[22px] font-semibold text-secondary"
+                href="/about.html"
+                >About</a
+              >
+            </li>
+            <li class="hover:scale-110 transition-all">
+              <a
+                class="text-[22px] font-semibold text-secondary"
+                href="/services.html"
+                >Services</a
+              >
+            </li>
+            <li class="hover:scale-110 transition-all">
+              <a class="text-[22px] font-semibold text-secondary" href="/"
+                >Partners</a
+              >
+            </li>
+            <li class="hover:scale-110 transition-all">
+              <a
+                class="text-[22px] font-semibold text-secondary"
+                href="/contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div id="slider1" class="splide z-9" aria-label="Hero banner carousel">
+          <div class="splide__track">
+            <div class="splide__list">
+              <div
+                class="splide__slide bg-[url('./assets/hero1.jpg')] custom_bg_image h-[110vh]"
+              >
+                <div
+                  class="backdrop-opacity-25 backdrop-invert bg-[#000] bg-opacity-30 h-[110vh] flex justify-center flex-col px-[20px] md:px-[40px] lg:px-[100px]"
+                >
+                  <div
+                    class="max-w-[700px]"
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="500"
+                  >
+                    <h1
+                      class="text-[20px] md:text-[26px] lg:text-[40px] font-bold text-[white] mb-[15px]"
+                    >
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Neque, pariatur.
+                    </h1>
+                    <h3
+                      class="text-[12px] md:text-[16px] lg:text-[20px] text-[white]"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Distinctio voluptates numquam minima vel. Pariatur
+                      voluptatem quis consectetur libero temporibus dolores.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="splide__slide bg-[url('./assets/hero2.jpg')] custom_bg_image h-[110vh]"
+              >
+                <div
+                  class="backdrop-opacity-25 backdrop-invert bg-[#000] bg-opacity-30 h-[110vh] flex justify-center flex-col px-[20px] md:px-[40px] lg:px-[100px]"
+                >
+                  <div
+                    class="max-w-[700px]"
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="500"
+                  >
+                    <h1
+                      class="text-[20px] md:text-[26px] lg:text-[40px] font-bold text-[white] mb-[15px]"
+                    >
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Neque, pariatur.
+                    </h1>
+                    <h3
+                      class="text-[12px] md:text-[16px] lg:text-[20px] text-[white]"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Distinctio voluptates numquam minima vel. Pariatur
+                      voluptatem quis consectetur libero temporibus dolores.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nav end -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Section 1 start -->
+    <section
+      class="flex flex-col-reverse md:flex-row justify-center gap-[50px] max-w-[1270px] mx-[1rem] md:mx-[2.5rem] lg:mx-[5rem] xl:mx-auto"
+    >
+      <div class="lg:w-[50%]">
+        <h1
+          class="text-[24px] lg:text-[40px] xl:text-[60px] mb-[15px] opacity-80 text-textColor leading-[1.6rem] lg:leading-[4.5rem]"
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="800"
+        >
+          You need the best advice
+        </h1>
+        <p
+          class="text-textColor text-[12px] lg:text-[16px] xl:text-[20px] leading-[20px] lg:leading-[30px] xl:leading-[35px] opacity-80 mb-[15px]"
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="800"
+          data-aos-delay="300"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+          repellat porro, error corrupti exercitationem unde voluptatibus.
+          Animi, iure. Neque animi enim repellendus et sapiente recusandae
+          reiciendis architecto nulla voluptatibus aliquid?
+        </p>
+        <h3
+          class="text-textColor text-[12px] lg:text-[16px] xl:text-[20px] opacity-80 pb-[10px]"
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="800"
+        >
+          Our extensive wealth of experience covers industries such as
+        </h3>
+        <table
+          class="table-auto border-collapse mt-[20px]"
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="800"
+          data-aos-delay="600"
+        >
+          <tbody>
+            <tr
+              class="text-textColor border-b-[0.5px] border-opacity-30 border-textColor"
+            >
+              <td
+                class="text-center text-[12px] lg:text-[16px] xl:text-[20px] opacity-70 p-[20px]"
+              >
+                Finance
+              </td>
+              <td
+                class="text-center text-[12px] lg:text-[16px] xl:text-[20px] opacity-70 p-[20px] border-x-[0.5px] border-opacity-30 border-textColor"
+              >
+                Malcolm Lockyer
+              </td>
+              <td
+                class="text-center text-[12px] lg:text-[16px] xl:text-[20px] opacity-70 p-[20px]"
+              >
+                Healthcare
+              </td>
+            </tr>
+            <tr
+              class="text-textColor border-b-[0.5px] border-opacity-30 border-textColor"
+            >
+              <td
+                class="text-center text-[12px] lg:text-[16px] xl:text-[20px] opacity-70 p-[20px]"
+              >
+                Witchy Woman
+              </td>
+              <td
+                class="text-center text-[12px] lg:text-[16px] xl:text-[20px] opacity-70 p-[20px] border-[0.5px] border-opacity-30 border-textColor"
+              >
+                The Eagles
+              </td>
+              <td
+                class="text-center text-[12px] lg:text-[16px] xl:text-[20px] opacity-70 p-[20px]"
+              >
+                1972
+              </td>
+            </tr>
+            <tr class="text-textColor">
+              <td
+                class="text-center text-[12px] lg:text-[16px] xl:text-[20px] opacity-70 p-[20px]"
+              >
+                Witchy Woman
+              </td>
+              <td
+                class="text-center text-[12px] lg:text-[16px] xl:text-[20px] opacity-70 p-[20px] border-x-[0.5px] border-opacity-30 border-textColor"
+              >
+                The Eagles
+              </td>
+              <td
+                class="text-center text-[12px] lg:text-[16px] xl:text-[20px] opacity-70 p-[20px]"
+              >
+                1972
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        id="slider2"
+        class="splide lg:w-[50%] relative top-0 lg:top-[-250px] z-[100]"
+        aria-label="Section 1 carousel"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img
+                src="./assets/section1.jpg"
+                alt=""
+                class="w-[100%] h-[50vh] lg:h-[90vh] object-cover rounded-tl-[50px] rounded-br-[50px]"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="./assets/section1_2.jpg"
+                alt=""
+                class="w-[100%] h-[50vh] lg:h-[90vh] object-cover rounded-tl-[50px] rounded-br-[50px]"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Section 1 end -->
+
+    <!-- Section 3 start -->
+    <section class="mb-[5rem]">
+      <h1
+        class="text-center text-[35px] lg:text-[50px] font-semibold text-textColor pb-[30px] pt-[50px] lg:pt-0"
+      >
+        Area of Expertise
+      </h1>
+      <!-- Grid 1 Start -->
+      <div
+        class="section_2_grid_1 max-w-[1200px] mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid"
+      >
+        <div
+          class="px-[45px] py-[60px] group hover:bg-primary hover:bg-opacity-70 transition-all hover:shadow-lg border-[lightgray] border-b-[1px] md:border-b-0"
+        >
+          <div
+            class="text-center flex justify-center bg-primary w-[100px] h-[100px] mx-auto rounded-full hover:animate-bounce"
+          >
+            <img
+              src="./assets/briefcase.svg"
+              alt=""
+              class="w-[80px] h-auto p-[8px]"
+            />
+          </div>
+          <div>
+            <p
+              class="text-center text-secondary opacity-70 text-[28px] py-[12px] group-hover:opacity-100"
+            >
+              Business Development
+            </p>
+            <p
+              class="text-center text-textColor text-[18px] leading-[2rem] pb-[18px] font-normal"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, eligendi.
+            </p>
+            <div class="flex items-center justify-center">
+              <button
+                class="flex items-center gap-[10px] bg-[white] py-[8px] px-[22px]"
+              >
+                <span class="text-textColor text-[20px]">MORE</span>
+                <img src="./assets/right-arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="px-[45px] py-[60px] group hover:bg-primary hover:bg-opacity-70 transition-all hover:shadow-lg border-b-[1px] md:border-b-0 md:border-x-[1px] border-[lightgray]"
+        >
+          <div
+            class="text-center flex justify-center bg-primary w-[100px] h-[100px] mx-auto rounded-full hover:animate-bounce"
+          >
+            <img
+              src="./assets/briefcase.svg"
+              alt=""
+              class="w-[80px] h-auto p-[8px]"
+            />
+          </div>
+          <div>
+            <p
+              class="text-center text-secondary opacity-70 text-[28px] py-[12px] group-hover:opacity-100"
+            >
+              Business Development
+            </p>
+            <p
+              class="text-center text-textColor text-[18px] leading-[2rem] pb-[18px] font-normal"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, eligendi.
+            </p>
+            <div class="flex items-center justify-center">
+              <button
+                class="flex items-center gap-[10px] bg-[white] py-[8px] px-[22px]"
+              >
+                <span class="text-textColor text-[20px]">MORE</span>
+                <img src="./assets/right-arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="px-[45px] py-[60px] group hover:bg-primary hover:bg-opacity-70 transition-all hover:shadow-lg border-b-[1px] md:border-b-0 md:border-x-[1px] lg:border-x-[0px] border-[lightgray]"
+        >
+          <div
+            class="text-center flex justify-center bg-primary w-[100px] h-[100px] mx-auto rounded-full hover:animate-bounce"
+          >
+            <img
+              src="./assets/briefcase.svg"
+              alt=""
+              class="w-[80px] h-auto p-[8px]"
+            />
+          </div>
+          <div>
+            <p
+              class="text-center text-secondary opacity-70 text-[28px] py-[12px] group-hover:opacity-100"
+            >
+              Business Development
+            </p>
+            <p
+              class="text-center text-textColor text-[18px] leading-[2rem] pb-[18px] font-normal"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, eligendi.
+            </p>
+            <div class="flex items-center justify-center">
+              <button
+                class="flex items-center gap-[10px] bg-[white] py-[8px] px-[22px]"
+              >
+                <span class="text-textColor text-[20px]">MORE</span>
+                <img src="./assets/right-arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="px-[45px] py-[60px] group hover:bg-primary hover:bg-opacity-70 transition-all hover:shadow-lg border-b-[1px] md:border-b-0 border-[lightgray]"
+        >
+          <div
+            class="text-center flex justify-center bg-primary w-[100px] h-[100px] mx-auto rounded-full hover:animate-bounce"
+          >
+            <img
+              src="./assets/briefcase.svg"
+              alt=""
+              class="w-[80px] h-auto p-[8px]"
+            />
+          </div>
+          <div>
+            <p
+              class="text-center text-secondary opacity-70 text-[28px] py-[12px] group-hover:opacity-100"
+            >
+              Business Development
+            </p>
+            <p
+              class="text-center text-textColor text-[18px] leading-[2rem] pb-[18px] font-normal"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, eligendi.
+            </p>
+            <div class="flex items-center justify-center">
+              <button
+                class="flex items-center gap-[10px] bg-[white] py-[8px] px-[22px]"
+              >
+                <span class="text-textColor text-[20px]">MORE</span>
+                <img src="./assets/right-arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="px-[45px] py-[60px] group hover:bg-primary hover:bg-opacity-70 transition-all hover:shadow-lg border-b-[1px] md:border-b-0 md:border-x-[1px] border-[lightgray]"
+        >
+          <div
+            class="text-center flex justify-center bg-primary w-[100px] h-[100px] mx-auto rounded-full hover:animate-bounce"
+          >
+            <img
+              src="./assets/briefcase.svg"
+              alt=""
+              class="w-[80px] h-auto p-[8px]"
+            />
+          </div>
+          <div>
+            <p
+              class="text-center text-secondary opacity-70 text-[28px] py-[12px] group-hover:opacity-100"
+            >
+              Business Development
+            </p>
+            <p
+              class="text-center text-textColor text-[18px] leading-[2rem] pb-[18px] font-normal"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, eligendi.
+            </p>
+            <div class="flex items-center justify-center">
+              <button
+                class="flex items-center gap-[10px] bg-[white] py-[8px] px-[22px]"
+              >
+                <span class="text-textColor text-[20px]">MORE</span>
+                <img src="./assets/right-arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="px-[45px] py-[60px] group hover:bg-primary hover:bg-opacity-70 transition-all hover:shadow-lg"
+        >
+          <div
+            class="text-center flex justify-center bg-primary w-[100px] h-[100px] mx-auto rounded-full hover:animate-bounce"
+          >
+            <img
+              src="./assets/briefcase.svg"
+              alt=""
+              class="w-[80px] h-auto p-[8px]"
+            />
+          </div>
+          <div>
+            <p
+              class="text-center text-secondary opacity-70 text-[28px] py-[12px] group-hover:opacity-100"
+            >
+              Business Development
+            </p>
+            <p
+              class="text-center text-textColor text-[18px] leading-[2rem] pb-[18px] font-normal"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, eligendi.
+            </p>
+            <div class="flex items-center justify-center">
+              <button
+                class="flex items-center gap-[10px] bg-[white] py-[8px] px-[22px]"
+              >
+                <span class="text-textColor text-[20px]">MORE</span>
+                <img src="./assets/right-arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Grid 1 End -->
+    </section>
+    <!-- Section 3 End -->
+
+    <!-- Section 5 Start -->
+    <section
+      class="bg-[url('./assets/hero1.jpg')] custom_bg_image bg-fixed text-[white] relative"
+    >
+      <div
+        class="bg-[url('./assets/overlay4.jpg')] opacity-40 custom_bg_image absolute top-0 right-0 w-full h-full"
+      ></div>
+      <div
+        class="backdrop-opacity-25 backdrop-invert bg-[#000] bg-opacity-30 py-[13rem]"
+      >
+        <div class="max-w-[1200px] mx-auto">
+          <h1 class="text-center text-[40px] lg:text-[50px] mb-[2rem]">
+            Testimonials
+          </h1>
+          <div
+            id="slider3"
+            class="splide relative"
+            aria-label="Section 1 carousel"
+          >
+            <div class="splide__track pb-[3rem]">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <p
+                    class="text-[16px] lg:text-[24px] mb-[2rem] text-center mx-[2rem] lg:mx-0"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga vel veritatis quibusdam doloribus tempora distinctio
+                    qui et illo adipisci dicta perspiciatis accusamus ducimus,
+                    temporibus iure labore nobis modi commodi fugiat.
+                  </p>
+                  <div class="flex items-center justify-center gap-[25px]">
+                    <img
+                      src="./assets/user.JPG"
+                      alt=""
+                      class="w-[60px] h-[60px] rounded-full"
+                    />
+                    <div>
+                      <h1 class="text-[18px] font-medium">Raji Oladeji</h1>
+                      <h3 class="text-[18px] font-normal">CEO</h3>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <p
+                    class="text-[16px] lg:text-[24px] mb-[2rem] text-center mx-[2rem] lg:mx-0"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga vel veritatis quibusdam doloribus tempora distinctio
+                    qui et illo adipisci dicta perspiciatis accusamus ducimus,
+                    temporibus iure labore nobis modi commodi fugiat.
+                  </p>
+                  <div class="flex items-center justify-center gap-[25px]">
+                    <img
+                      src="./assets/user.JPG"
+                      alt=""
+                      class="w-[60px] h-[60px] rounded-full"
+                    />
+                    <div>
+                      <h1 class="text-[18px] font-medium">Amoke Salami</h1>
+                      <h3 class="text-[18px] font-normal">CEO</h3>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 5 End -->
+
+    <!-- Section 4 Start -->
+    <section class="bg-[white] py-[80px] md:py-[120px]">
+      <div
+        class="flex flex-col md:flex-row border-t-[1px] border-[lightgray] max-w-[1200px] mx-auto"
+      >
+        <div
+          class="border-r-[1px] border-[lightgray] md:pl-[70px] pt-[40px] md:pr-[30px] md:w-[30%]"
+        >
+          <h1
+            class="text-[24px] sm:text-[30px] lg:text-[40px] text-textColor font-semibold text-center md:text-right"
+          >
+            Let the Numbers Speak
+          </h1>
+        </div>
+        <div
+          class="pt-[40px] flex flex-col md:flex-row justify-around md:pl-[30px] md:w-[70%]"
+        >
+          <div class="relative pt-[20px]">
+            <div
+              class="absolute top-0 left-[50%] translate-x-[-50%] h-[2px] w-[50px] bg-secondary"
+            ></div>
+            <h3 class="text-textColor text-[16px] font-medium text-center">
+              Happy Clients
+            </h3>
+            <h6 class="text-primary text-[54px] font-bold text-center">150+</h6>
+          </div>
+          <div class="relative pt-[20px]">
+            <div
+              class="absolute top-0 left-[50%] translate-x-[-50%] h-[2px] w-[50px] bg-secondary"
+            ></div>
+            <h3 class="text-textColor text-[16px] font-medium text-center">
+              Suscessful Projects
+            </h3>
+            <h6 class="text-primary text-[54px] font-bold text-center">300+</h6>
+          </div>
+          <div class="relative pt-[20px]">
+            <div
+              class="absolute top-0 left-[50%] translate-x-[-50%] h-[2px] w-[50px] bg-secondary"
+            ></div>
+            <h3 class="text-textColor text-[16px] font-medium text-center">
+              Expert & Advisors
+            </h3>
+            <h6 class="text-primary text-[54px] font-bold text-center">50+</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 4 End -->
+
+    <!-- Footer  Start -->
+    <footer
+      class="bg-[url('./assets/hero2.jpg')] custom_bg_image bg-fixed text-[white] relative"
+    >
+      <div
+        class="bg-[url('./assets/overlay4.jpg')] opacity-40 custom_bg_image absolute top-0 right-0 w-full h-full"
+      ></div>
+      <div
+        class="backdrop-opacity-25 backdrop-invert bg-[#000] bg-opacity-30 pt-[10rem] pb-[3rem]"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-around items-start max-w-[350px] md:max-w-[100vw] gap-[15px] md:gap-[0px] mx-auto px-[1.5rem] md:px-[0rem]"
+        >
+          <div>
+            <h1 class="text-[28px] md:text-[34px] font-medium pb-[14px]">
+              Our Locations
+            </h1>
+            <p class="pb-[6px] text-[20px]">24, Kolapo Ishola, Akobo, Ibadan</p>
+            <p class="pb-[6px] text-[20px]">info@riusconsultancy.com</p>
+            <p class="pb-[6px] text-[20px]">09086650921 09039523854</p>
+          </div>
+          <div class="">
+            <h1 class="text-[28px] md:text-[34px] font-medium pb-[14px]">
+              Links
+            </h1>
+            <div>
+              <a href="/" class="text-[16px] md:text-[20px] pb-[6px]">Home</a>
+            </div>
+            <div>
+              <a
+                href="/contact.html"
+                class="text-[16px] md:text-[20px] pb-[6px]"
+                >Contact</a
+              >
+            </div>
+            <div>
+              <a href="/about.html" class="text-[16px] md:text-[20px] pb-[6px]"
+                >About</a
+              >
+            </div>
+            <div>
+              <a
+                href="/services.html"
+                class="text-[16px] md:text-[20px] pb-[6px]"
+                >Services</a
+              >
+            </div>
+          </div>
+          <div>
+            <h1 class="text-[28px] md:text-[34px] font-medium pb-[14px]">
+              Social
+            </h1>
+            <div>
+              <a href="/" class="text-[16px] md:text-[20px] pb-[6px]">Email</a>
+            </div>
+            <div>
+              <a href="/" class="text-[16px] md:text-[20px] pb-[6px]"
+                >Instagram</a
+              >
+            </div>
+            <div>
+              <a href="/" class="text-[16px] md:text-[20px] pb-[6px]"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-[5rem]">
+          <div class="border-t-[2px] border-[gray] px-[20px] pt-[14px]">
+            <p
+              class="text-[16px] md:text-[20px] font-medium text-center pb-[8px]"
+            >
+              Copyright &copy; 2020 RIUS consulting
+            </p>
+            <p class="text-[16px] md:text-[20px] font-medium text-center">
+              Powered by RIUS consulting
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer  End -->
+
+    <script src="./modjs//splide.min.js"></script>
+
+    <script src="./modjs/aos.js"></script>
+    <script>
+      new Splide("#slider1", {
+        type: "loop",
+        arrows: false,
+        perPage: 1,
+      }).mount();
+      new Splide("#slider2", {
+        type: "loop",
+        arrows: false,
+        perPage: 1,
+      }).mount();
+      new Splide("#slider3", {
+        type: "loop",
+        arrows: false,
+        perPage: 1,
+      }).mount();
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="module" src="./js/progress.js"></script>
+    <script type="module" src="./js/top.js"></script>
+    <script type="module" src="./js/nav.js"></script>
+    <script type="module" src="./js/cursor.js"></script>
+  </body>
+</html>

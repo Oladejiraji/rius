@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.owl-dots {
+    display: none !important;
+}
+
+.custom_bg_image {
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.stats_before::after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 1px;
+    background-color: #FF8066;
+}
+
+.splide__pagination {
+    display: none;
+}
+
+#_progress {
+    --scroll: 0%;
+    background: linear-gradient(
+      to right,
+      rgb(0, 143, 105) var(--scroll),
+      transparent 0
+    );
+    position: fixed;
+    width: 100%;
+    height: 8px;
+    top: 0px;
+    z-index: 1000;
+  }
+
+  /* Top Button */
+#top-btn {
+    position: fixed;
+    background-color: #845EC2;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+    padding: 1rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+    z-index: 800000;
+    border-radius: 50%;
+    padding: 8px;
+  }
+
+  .circle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    z-index: 10000;
+    border-radius: 50%;
+    background-color: #3f37c9;
+    transition: all ease-out 0.5s;
+    display: none;
+    opacity: 0.9;
+  }
+  
+  .custom-shape-divider-top-1661308978 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+}
+
+.custom-shape-divider-top-1661308978 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 167px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1661308978 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1661309438 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 10;
+}
+
+.custom-shape-divider-bottom-1661309438 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 167px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1661309438 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.label_after::after {
+  position: absolute;
+  content: '*';
+  top: 0;
+  right: -15px;
+  color: #FF8066;
+}
